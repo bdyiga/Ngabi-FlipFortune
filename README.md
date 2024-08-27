@@ -1,4 +1,4 @@
-# CardGuessing-Game
+# The CardGuessing-Game
 This repository is for my card guessing game.
 
 Card Guessing Game Design Document
