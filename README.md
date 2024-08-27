@@ -4,11 +4,14 @@ This repository is for my card guessing game.
 Card Guessing Game Design Document
 
 1. Introduction
+   
 1.1 Purpose
 This document outlines the design and implementation of a text-based Card Guessing Game. It serves as a comprehensive guide for developers, detailing the game's structure, mechanics, and features.
+
+
 1.2 Scope
 The Card Guessing Game is a Python-based application that offers both basic and advanced gameplay modes, challenging players to guess various attributes of playing cards.
-2. Game Overview
+3. Game Overview
 2.1 Basic Gameplay (CardGuessingGame Class)
 Players attempt to guess three attributes of a randomly drawn card:
 Color (Red or Black)
@@ -21,7 +24,7 @@ Multiple difficulty levels (Easy, Medium, Hard)
 Lives system
 Time limits for guesses and overall gameplay
 Card history guessing (Hard mode only)
-3. Technical Specifications
+4. Technical Specifications
 3.1 Programming Language
 Python 3.x
 3.2 Required Libraries
@@ -56,7 +59,7 @@ make_guess(): Processes guesses with timing and life management
 guess_card_history(): Implements history guessing feature
 play_round(): Enhanced version with difficulty features
 play_game(): Advanced game flow control
-4. Gameplay Mechanics
+5. Gameplay Mechanics
 4.1 Card Representation
 Colors: Red, Black
 Positions: 2-10, Jack, Queen, King, Ace
@@ -72,7 +75,7 @@ Hard: 2 lives, 7 seconds per guess, 1 minute total
 Time-limited guesses
 Overall game time limit
 Card history guessing (Hard mode)
-5. User Interface
+6. User Interface
 5.1 Input Handling
 Text-based input via console
 Capitalization handling for user inputs
@@ -80,7 +83,7 @@ Capitalization handling for user inputs
 Clear text prompts for each guess
 Immediate feedback on guess correctness
 Display of current score, remaining time, and lives
-6. Game Flow
+7. Game Flow
 6.1 Basic Mode
 Initialize game
 Draw a card
@@ -95,13 +98,13 @@ Initialize game with difficulty settings
 Play rounds with time limits and life system
 Include card history guessing in Hard mode
 End game when time expires or lives run out
-7. Error Handling and Edge Cases
+8. Error Handling and Edge Cases
 7.1 Input Validation
 Capitalize user inputs for consistent comparison
 Handle timeout scenarios in advanced mode
 7.2 Empty Card Attributes
 Error handling for potential empty card attribute lists
-8. Future Enhancements
+9. Future Enhancements
 8.1 Short-term Improvements
 Implement a high score system
 Add more detailed statistics (e.g., guess accuracy percentages)
@@ -109,7 +112,7 @@ Add more detailed statistics (e.g., guess accuracy percentages)
 Develop a graphical user interface
 Implement multiplayer functionality
 Create mobile app versions
-9. Conclusion
+10. Conclusion
 The Card Guessing Game provides an engaging, scalable platform for players to test their luck and intuition with playing cards. Its modular design allows for easy expansion and modification, providing a solid foundation for future development and feature additions.
 
 
