@@ -182,7 +182,7 @@ Create mobile app versions
 
 9. Conclusion
     
-The Card Guessing Game provides an engaging, scalable platform for players to test their luck and intuition with playing cards. Its modular design allows for easy expansion and modification, providing a solid foundation for future development and feature additions.
+The Card Guessing Game provides an engaging, scalable platform for players to test their luck and intuition with playing cards. Its modular design allows for easy expansion and modification, providing a solid foundation for future development and feature additions. Possible future enhancements include: graphical user interface, multiplayer support, more difficulty levels, persistence of high scores. 
 
 
 
