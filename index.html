@@ -33,7 +33,7 @@
         
         .card-back {
             transform: rotateY(180deg);
-            background: linear-gradient(45deg, #1a365d, #2d3748);
+            background: linear-gradient(45deg, #1e40af, #3730a3);
         }
 
         @keyframes pulse {
@@ -111,18 +111,18 @@
                     <div id="value-guess" class="hidden text-center">
                         <h3 class="text-xl mb-4">Higher or Lower?</h3>
                         <div class="space-x-4">
-                            <button onclick="makeGuess('value', 'Higher')" class="py-2 px-6 bg-blue-600 hover:bg-blue-700 rounded">Higher</button>
-                            <button onclick="makeGuess('value', 'Lower')" class="py-2 px-6 bg-blue-600 hover:bg-blue-700 rounded">Lower</button>
+                            <button onclick="makeGuess('value', 'Higher')" class="py-2 px-6 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 rounded-lg shadow-lg hover:shadow-blue-500/50 transition-all">Higher</button>
+                            <button onclick="makeGuess('value', 'Lower')" class="py-2 px-6 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 rounded-lg shadow-lg hover:shadow-blue-500/50 transition-all">Lower</button>
                         </div>
                     </div>
 
                     <div id="suit-guess" class="hidden text-center">
                         <h3 class="text-xl mb-4">Guess the Suit</h3>
                         <div class="grid grid-cols-2 gap-4">
-                            <button onclick="makeGuess('suit', 'Hearts')" class="py-2 px-6 bg-red-600 hover:bg-red-700 rounded">Hearts</button>
-                            <button onclick="makeGuess('suit', 'Diamonds')" class="py-2 px-6 bg-red-600 hover:bg-red-700 rounded">Diamonds</button>
-                            <button onclick="makeGuess('suit', 'Spades')" class="py-2 px-6 bg-gray-800 hover:bg-gray-900 rounded">Spades</button>
-                            <button onclick="makeGuess('suit', 'Clubs')" class="py-2 px-6 bg-gray-800 hover:bg-gray-900 rounded">Clubs</button>
+                            <button onclick="makeGuess('suit', 'Hearts')" class="py-2 px-6 bg-gradient-to-r from-red-500 to-rose-500 hover:from-red-600 hover:to-rose-600 rounded-lg shadow-lg hover:shadow-red-500/50 transition-all">Hearts</button>
+                            <button onclick="makeGuess('suit', 'Diamonds')" class="py-2 px-6 bg-gradient-to-r from-red-500 to-rose-500 hover:from-red-600 hover:to-rose-600 rounded-lg shadow-lg hover:shadow-red-500/50 transition-all">Diamonds</button>
+                            <button onclick="makeGuess('suit', 'Spades')" class="py-2 px-6 bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-800 hover:to-gray-950 rounded-lg shadow-lg hover:shadow-gray-700/50 transition-all">Spades</button>
+                            <button onclick="makeGuess('suit', 'Clubs')" class="py-2 px-6 bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-800 hover:to-gray-950 rounded-lg shadow-lg hover:shadow-gray-700/50 transition-all">Clubs</button>
                         </div>
                     </div>
                 </div>
@@ -180,6 +180,7 @@
                         break;
                 }
                 this.currentCard = this.drawCard();
+                document.getElementById('card-suit').classList.add('hidden');
                 this.updateUI();
                 this.startTimer();
             }
@@ -257,6 +258,7 @@
             nextRound() {
                 this.currentCard = this.drawCard();
                 document.getElementById('color-guess').classList.remove('hidden');
+                document.getElementById('card-suit').classList.add('hidden');
                 this.updateUI();
             }
 
